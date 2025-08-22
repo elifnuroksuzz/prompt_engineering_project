@@ -1,0 +1,116 @@
+# API Keys and Environment Variables
+config/.env
+.env
+*.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# API Keys in any location
+**/GEMINI_API_KEY*
+**/OPENAI_API_KEY*
+**/*_API_KEY*
+config/keys/
+secrets/
+
+# Output Files and Results
+data/output/
+data/output/*
+*.csv
+*.json
+results/
+reports/
+logs/
+benchmarks/
+
+# Temporary and Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Model Files and Large Data
+*.pkl
+*.pickle
+*.model
+*.weights
+*.h5
+*.onnx
+
+# System Files
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Generated Documentation
+docs/_build/
+site/
+
+# Configuration Overrides
+config/local_settings.yaml
+config/production_settings.yaml
+config/*_override.yaml
+
+# Test Data (if sensitive)
+test_data/sensitive/
+data/private/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Performance Monitoring
+profiling/
+*.prof

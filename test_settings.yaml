@@ -1,0 +1,30 @@
+model:
+  name: "gemini-2.5-flash"
+  temperature: 0.1
+  max_tokens: 2048
+  mock_mode: true
+
+evaluation:
+  output_dir: "data/output"
+  save_results: false
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+tasks:
+  text_classification:
+    enabled: true
+    strategies: ["zero_shot", "few_shot"]
+  
+  mathematical_reasoning:
+    enabled: true
+    strategies: ["vanilla", "few_shot_cot"]
+
+visualization:
+  enabled: false
+  
+advanced_features:
+  response_caching: false
+  parallel_processing: false
+  detailed_logging: false
